@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="index.js" defer="true"></script>
+    <script src="main.js" defer="true" type="module"></script>
   </head>
   <body>
     <main>
       <div class="add-input-container">
-        <input type="text" />
-        <div class="add-btn">Add</div>
+        <input type="text" id="input-add" />
+        <div class="add-btn" id="add-btn">Add</div>
       </div>
 
       <div class="main-cont">
@@ -19,7 +19,7 @@
           <h2 class="heading">pending todos</h2>
           <li class="todo">
             <div class="left-side">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="check" />
               <h3 class="todo-name">
                 <a href="">Do laundry</a>
               </h3>
