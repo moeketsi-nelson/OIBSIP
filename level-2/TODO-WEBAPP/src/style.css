@@ -30,6 +30,11 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.delete-todo-btn {
+  cursor: pointer;
 }
 
 main {
@@ -47,6 +52,7 @@ main .add-input-container {
 }
 main .add-input-container input[type=text] {
   width: 100%;
+  padding: 0 10px;
 }
 main .add-input-container .add-btn {
   background-color: #000000;
@@ -64,6 +70,8 @@ main .pending-todo-container, main .completed-todo-container {
   color: #000000;
   display: flex;
   flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
 }
 main .pending-todo-container .todo, main .completed-todo-container .todo {
   display: flex;
@@ -83,6 +91,10 @@ main .pending-todo-container .todo .left-side, main .completed-todo-container .t
 }
 main .pending-todo-container .todo .left-side .todo-name, main .completed-todo-container .todo .left-side .todo-name {
   font-weight: 400;
+}
+main .completed-todo-container {
+  height: -moz-max-content;
+  height: max-content;
 }
 main .completed-todo-container li .todo-name {
   text-decoration: line-through;
