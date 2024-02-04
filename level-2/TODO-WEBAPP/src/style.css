@@ -33,6 +33,10 @@ body {
   cursor: pointer;
 }
 
+.list-cont {
+  width: 100%;
+}
+
 .delete-todo-btn {
   cursor: pointer;
 }
@@ -63,6 +67,7 @@ main .heading {
   padding: 8px;
   font-weight: 500;
   text-transform: uppercase;
+  background-color: rgba(53, 86, 100, 0.1019607843);
 }
 main .pending-todo-container, main .completed-todo-container {
   width: 100%;
