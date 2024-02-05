@@ -34,24 +34,6 @@ body {
   color: #fff;
 }
 
-.main-heading {
-  font-size: 5rem;
-  font-weight: 900;
-  max-width: 600px;
-  margin-top: 40px;
-  line-height: 1.35;
-  letter-spacing: -2px;
-  color: #fff;
-  filter: drop-shadow(0px 2px 10px #00000017);
-}
-
-.gradient-wrap-text {
-  font-size: 5rem;
-  background: radial-gradient(#01b3ff, #8000ff);
-  color: transparent;
-  background-clip: text;
-}
-
 .btn {
   padding: 12px 28px;
   max-width: 200px;
@@ -103,6 +85,25 @@ main {
       background-color: $background;
       color: white;
     }
+  }
+
+  .main-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 400px;
+
+    margin-top: 40px;
+    line-height: 1.35;
+    letter-spacing: -2px;
+    color: #fff;
+    filter: drop-shadow(0px 2px 10px #00000017);
+  }
+
+  .gradient-wrap-text {
+    font-size: 3.5rem;
+    background: radial-gradient(#01b3ff, #8000ff);
+    color: transparent;
+    background-clip: text;
   }
 
   .heading {
@@ -170,6 +171,15 @@ main {
   }
   main {
     width: 100%;
+
+    .main-heading {
+      font-size: 5rem;
+      max-width: 600px;
+    }
+
+    .gradient-wrap-text {
+      font-size: 5rem;
+    }
 
     .main-cont {
       flex-direction: row;
