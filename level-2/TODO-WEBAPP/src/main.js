@@ -5,6 +5,9 @@ const textinput = document.querySelector("#input-add");
 const pendingCont = document.querySelector(".pending-todo-container");
 const completedCont = document.querySelector(".completed-todo-container");
 
+localStorage.setItem("pending", JSON.stringify({}));
+localStorage.setItem("complete", JSON.stringify({}));
+
 addBtn.addEventListener("click", () => {
   if (textinput.value === "") return;
   let data = textinput.value;
@@ -88,6 +91,7 @@ function createListItem(cont, data, id, state) {
     }
 
     let completedTodoObj = JSON.parse(localStorage.getItem("complete"));
+    console.log(completedTodoObj);
     if (completedTodoObj.hasOwnProperty(id)) {
       delete completedTodoObj[id];
     }
